@@ -1,18 +1,14 @@
-import MainHeader from "@/components/main-header/main-header";
-import "./globals.css";
+import './globals.css';
 
 export const metadata = {
-  title: "NextLevel Food",
-  description: "Delicious meals, shared by a food-loving community.",
-};
+  title: 'Next.js Page Routing & Rendering',
+  description: 'Learn how to route to different pages.',
+}
 
 export default function RootLayout({ children }) {
-  return (
+ return (
     <html lang="en">
-      <body>
-        <MainHeader />
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
