@@ -1,6 +1,6 @@
 "use client";
 import FormSubmit from "@/components/form-submit";
-import { createPost } from "@/lib/action";
+import { createPost } from "@/actions/posts";
 import { useFormState } from "react-dom";
 
 export default function NewPostPage() {

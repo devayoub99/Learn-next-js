@@ -1,5 +1,6 @@
 "use server";
-import { storePost } from "./posts";
+import { redirect } from "next/navigation";
+import { storePost } from "../lib/posts";
 
 export const createPost = async (prevState, formData) => {
     const title = formData.get("title");
